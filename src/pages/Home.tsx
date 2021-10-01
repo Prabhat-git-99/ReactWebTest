@@ -1,15 +1,11 @@
 import React, { useEffect, useRef } from 'react';
-import { Button } from 'reactstrap';
-import Layout from '../components/shared/Layout';
 
 import styled from 'styled-components';
 
 import Banner from '../components/Home';
 import About from '../components/About';
 import Sector from '../components/Sectors';
-import Cards from '../components/shared/Cards';
 
-import Logo from '../images/logo.svg';
 import Projects from '../components/Projects';
 import Client from '../components/Clients';
 import Member from '../components/Members';
@@ -47,7 +43,7 @@ const Home = ( ) => {
         }
 
     }
-    useMountEffect(( ) => executeScroll( myRef )); 
+    useMountEffect((  ) => executeScroll( myRef )); 
 
     return (
         <HomeWrapper ref = { myRef } >

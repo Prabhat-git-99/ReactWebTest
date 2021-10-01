@@ -13,7 +13,7 @@ const Banner: FC< { fun: Function } > = ( { fun } ) : ReactElement => {
         <BannerWrapper bg = { Bg } >
             <Layout fun= { fun } >
                 <div className = 'banner-img-container'>
-                    <img src={ Group } className="img-fluid" alt="Responsive image" /> 
+                    <img src={ Group } className="img-fluid" alt="cas ltd" /> 
                 </div>
                 <div className="a"></div>
             </Layout>
@@ -24,12 +24,10 @@ const Banner: FC< { fun: Function } > = ( { fun } ) : ReactElement => {
 
 const BannerWrapper = styled.div< { bg: any } >`
 
-    /* background: red; */
 
     background: ${props => `url(${props.bg}) no-repeat top center`};
     background-size: cover;
     background-position: center;
-    /* background-repeat: no-repeat; */
     opacity: 0.99;
     min-height: 80vh;
 

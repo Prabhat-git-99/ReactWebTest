@@ -1,5 +1,5 @@
-import React, { FC, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React, { FC } from 'react';
+import { NavLink } from 'react-router-dom';
 import { data } from '../../../../Data/header';
 import styled from 'styled-components';
 
@@ -15,7 +15,7 @@ const Header: FC< { fun: Function } > = ( { fun } ) => {
     <NavbarWrapper className="m-0">
     <nav className="navbar navbar-expand-lg navbar-inverse bg-inverse navbar-toggleable-sm">
         <div className="container-fluid">
-            <a href="#" className="navbar-brand">
+            <a  className="navbar-brand">
                 <img src={ Logo} height="42" alt="CoolBrand" />
             </a>
             <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -53,6 +53,7 @@ const NavbarWrapper = styled.div`
         
     }
 
+    
     .navbar {
 
         padding: 20px 5%;
